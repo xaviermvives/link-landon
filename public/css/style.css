@@ -20,14 +20,6 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-/* overwriting the tricky #root element which styles are not localized */
-#root {
-  min-width: 100%;
-  padding: 0 !important;
-  margin: 0 auto;
-  /*background: white;*/
-}
-
 
 /* line 22, ../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
 html {
