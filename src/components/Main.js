@@ -1,6 +1,6 @@
 import React from 'react';
-import Welcome from './Welcome.jsx';
-import Hotelinfo from './Hotelinfo.jsx';
+import Welcome from './Welcome.js';
+import Hotelinfo from './Hotelinfo.js';
 
 const Main = () => {
     return (

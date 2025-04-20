@@ -1,7 +1,23 @@
-import React from 'react';
-import menuLinksData from './data/menu_links.json'
+import React, {useState, useEffect} from 'react';
+// import menuLinksData from './data/menu_links.json'
 
 const Header = () => {
+  const [menuLinksData, setMenuLinksData] = useState([]);
+  
+  const loadMenuLinksData = async() =>  {
+      // Query the API Gateway
+      const resp = await fetch('https://ke1kloyva3.execute-api.eu-north-1.amazonaws.com/Production/menulinks');
+      let jsonData = await resp.json();
+      
+      // Assign response data to our state variable
+      setMenuLinksData(jsonData)
+      
+    }
+
+  useEffect(() => {
+      loadMenuLinksData(menuLinksData)
+    })
+
     return (
         <header id="intro">
           <article className="fullheight">
