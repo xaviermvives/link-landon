@@ -15,7 +15,7 @@ const Header = () => {
     }
 
   useEffect(() => {
-      loadMenuLinksData(menuLinksData)
+      loadMenuLinksData()
     })
 
     return (
