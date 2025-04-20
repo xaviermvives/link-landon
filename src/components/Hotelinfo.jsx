@@ -8,7 +8,7 @@ const Hotelinfo = () => {
 
   const loadServicesData = async() => {
     // Query the API Gateway
-    const resp = await fetch('https://ke1kloyva3.execute-api.eu-north-1.amazonaws.com/Production/services')
+    const resp = await fetch('https://.../Production/services')
     const jsonServicesData = await resp.json()
 
     // Assign response data to our state variable
@@ -17,7 +17,7 @@ const Hotelinfo = () => {
 
   const loadAccessibilitiesData = async() => {
     // Query the API Gateway
-    const resp = await fetch('https://ke1kloyva3.execute-api.eu-north-1.amazonaws.com/Production/accessibilities');
+    const resp = await fetch('https://.../Production/accessibilities');
     const jsonAccessibilitiesData = await resp.json();
 
     // Assign response data to our state variable
